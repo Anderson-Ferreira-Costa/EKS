@@ -8,6 +8,7 @@ variable "region" {
 ## provider que você utilizará, nesse exemplo vou estar utilizando apenas AWS
 provider "aws" {
   region = var.region
+  profile = "default"
 }
 
 ## em qual AZ vc quer criar esse recurso, no caso estou selecionando qualquer uma disponível
